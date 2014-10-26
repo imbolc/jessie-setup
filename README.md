@@ -3,8 +3,7 @@ Setup Debian Wheezy server
 
 Run from root
 -------------
-    # cd; wget --no-check-certificate https://raw.github.com/imbolc/jessie-setup/master/root-install.sh
-    # bash root-install.sh
+    # cd && wget --no-check-certificate https://raw.github.com/imbolc/jessie-setup/master/root-install.sh && bash root-install.sh
 
 Create user
 -----------
@@ -18,8 +17,7 @@ Remove user sudo password. Add to **/etc/sudoers**
 Run from user
 -------------
     # su <user>
-    $ cd; wget --no-check-certificate https://raw.github.com/imbolc/jessie-setup/master/user-install.sh
-    $ bash user-install.sh
+    $ cd && wget --no-check-certificate https://raw.github.com/imbolc/jessie-setup/master/user-install.sh && bash user-install.sh
 
 
 Setup ssh pubkey auth
