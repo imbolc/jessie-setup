@@ -27,7 +27,7 @@ Copy pubkey from local mashine:
     local@mashine$ ssh-copy-id <user@sever_ip>
 
 
-`sudo vim /etc/ssh/sshd_config`:
+**sudo vim /etc/ssh/sshd_config**
 
     # disable password auth
     PasswordAuthentication no
