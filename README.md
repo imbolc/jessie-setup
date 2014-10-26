@@ -25,6 +25,10 @@ Setup ssh pubkey auth
 Copy pubkey from local mashine:
 
     local@mashine$ ssh-copy-id <user@sever_ip>
+    
+Generate local keys:
+
+    ssh-keygen -t rsa
 
 
 **sudo vim /etc/ssh/sshd_config**
