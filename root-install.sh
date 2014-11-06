@@ -55,10 +55,10 @@ aptitude install -y libxml2-dev libxslt1-dev
 aptitude install -y libcurl4-openssl-dev
 aptitude install -y libjpeg62-dev libfreetype6-dev
 aptitude install -y postgresql-server-dev-9.4
-#aptitude install -y libevent-dev
+aptitude install -y libevent-dev
 
 aptitude install -y cron htop screen mc sudo apache2-utils gcc rsync
-aptitude install -y nginx runit
+aptitude install -y nginx supervisor
 
 aptitude install -y python python-setuptools python-dev
 easy_install pip
