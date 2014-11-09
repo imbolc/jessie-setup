@@ -20,6 +20,7 @@ EOF
 
 echo "aptitude update"
 aptitude update && aptitude upgrade
+aptitude purge apt-xapian-index -y
 
 echo "=== LOCALES"
 aptitude install -y locales 
