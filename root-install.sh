@@ -45,17 +45,16 @@ update-alternatives --set editor /usr/bin/vim.nox
 
 
 echo "=== INSTALL PACKAGES"
-# psmsic --> pkill
-# apache-utils --> ab
-# libxml2-dev libxslt1-dev --> build lxml from source
-# libcurl4-openssl-dev --> build pycurl from source
-# libjpeg62-dev libfreetype6-dev --> build PIL from source
-# postgresql-server-dev-9.4 --> build psycopg from source
+# build lxml from source
 aptitude install -y libxml2-dev libxslt1-dev
+# build pycurl from source
 aptitude install -y libcurl4-openssl-dev
+# build PIL from source
 aptitude install -y libjpeg62-dev libfreetype6-dev
+# build psycopg from source
 aptitude install -y postgresql-server-dev-9.4
-#aptitude install -y libevent-dev
+# build geven from source
+aptitude install -y libevent-dev
 
 aptitude install -y cron htop screen mc sudo apache2-utils gcc rsync
 aptitude install -y nginx runit

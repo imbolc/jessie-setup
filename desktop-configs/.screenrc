@@ -1,0 +1,26 @@
+# Цвета в vim
+term xterm-256color
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E38;5;%dm'
+defbce "on"
+
+# Отключаем приветствие
+startup_message off
+
+# Включаем utf8
+defutf8 on
+
+# Использовать визуальный сигнал (мигание экрана) вместо писка динамика
+vbell on
+
+# Размер буфера прокрутки
+defscrollback 1000
+
+# Активировать возможность прокрутки в xterm (и других эмуляторах терминала)
+termcapinfo xterm* ti@:te@
+
+# Строка состояния
+# для авто-названий табов в ~/.bashrc включить:
+# export PROMPT_COMMAND='echo -ne "\033k\033\0134"'
+shelltitle "$ |bash"
+hardstatus alwayslastline "%-w%{= BW}%50>%n %t%{-}%+w%<"
