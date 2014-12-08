@@ -20,6 +20,7 @@ EOF
 
 echo "aptitude update"
 aptitude update && aptitude upgrade
+aptitude purge apt-xapian-index -y
 
 echo "=== LOCALES"
 aptitude install -y locales 
@@ -57,7 +58,7 @@ aptitude install -y postgresql-server-dev-9.4
 aptitude install -y libevent-dev
 
 aptitude install -y cron htop screen mc sudo apache2-utils gcc rsync
-aptitude install -y nginx runit
+aptitude install -y nginx supervisor
 
 aptitude install -y python python-setuptools python-dev
 easy_install pip
