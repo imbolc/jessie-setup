@@ -57,7 +57,7 @@ aptitude install -y postgresql-server-dev-9.4
 # build geven from source
 aptitude install -y libevent-dev
 
-aptitude install -y cron htop screen mc sudo apache2-utils gcc rsync
+aptitude install -y cron htop screen mc sudo apache2-utils gcc rsync mosh
 aptitude install -y nginx supervisor
 
 aptitude install -y python python-setuptools python-dev
