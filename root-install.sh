@@ -51,7 +51,7 @@ aptitude install -y libxml2-dev libxslt1-dev
 # build pycurl from source
 aptitude install -y libcurl4-openssl-dev
 # build PIL from source
-aptitude install -y libjpeg62-dev libfreetype6-dev
+aptitude install -y libjpeg-dev libfreetype6-dev
 # build psycopg from source
 aptitude install -y postgresql-server-dev-9.4
 # build geven from source

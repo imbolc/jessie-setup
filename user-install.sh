@@ -61,3 +61,15 @@ git config --global user.name $(whoami)
 git config --global user.email $(whoami)@$(hostname)
 git config --global alias.ci commit
 git config --global alias.st status
+
+echo "=== Pyenv"
+curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+cat > ~/.bashrc << EOF
+
+# pyenv
+export PYENV_ROOT="${HOME}/.pyenv"
+if [ -d "${PYENV_ROOT}" ]; then
+  export PATH="${PYENV_ROOT}/bin:${PATH}"
+  eval "$(pyenv init -)"
+fi
+EOF

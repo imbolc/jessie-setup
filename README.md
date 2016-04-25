@@ -47,3 +47,21 @@ Restart ssh daemon:
 
     sudo reboot
 
+
+Install python
+--------------
+1. Look at avaliable versions with `pyenv install --list`
+2. Install the last versions with `pyenv install <version>`
+3. Set default versions with: `cd; pyenv local 2.x.y 3.x.y`
+
+Install postgres
+----------------
+Add to `/etc/apt/sources.list`:
+
+    deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main   
+
+Run:
+
+    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+    sudo aptitude update
+    sudo aptitude install postgresql-9.5 postgresql-server-dev-9.5
