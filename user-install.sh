@@ -14,8 +14,21 @@ ln -s ~/.vim/.vimrc ~
 update-alternatives --set editor /usr/bin/vim.nox
 
 
-echo "=== Enable sudo autocomplete"
-echo "complete -cf sudo" >> ~/.bashrc
+echo "=== Enable sudo autocomplete, vim-like comand line, screen tabs auto-naming"
+cat > ~/.bashrc << EOF
+
+# sudo autocomplete
+complete -cf sudo
+
+# vim colors in screen
+export TERM='xterm-256color'
+
+# vim-like comand line
+set -o vi
+
+# auto-change tabname in screen
+export PROMPT_COMMAND='echo -ne "\033k\033\0134"'
+EOF
 
 echo "=== Bash aliases"
 cat > ~/.bash_aliases << EOF
