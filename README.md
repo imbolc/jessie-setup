@@ -54,6 +54,7 @@ Install python
 2. Install the last versions with `pyenv install <version>`
 3. Set default versions with: `cd; pyenv local 2.x.y 3.x.y`
 
+
 Install postgres
 ----------------
 Add to `/etc/apt/sources.list`:
@@ -66,3 +67,16 @@ Run:
     sudo aptitude update
     sudo aptitude install postgresql-9.5 postgresql-server-dev-9.5
     sudo su postgres -c "cd /; createuser -s <username>"
+
+
+Install mongodb
+---------------
+Add to `/etc/apt/sources.list`:
+
+    deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/3.3 main
+
+Run:
+
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv D68FA50FEA312927
+    sudo aptitude update
+    sudo apt-get install -y mongodb-org

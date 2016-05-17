@@ -26,6 +26,10 @@ export TERM='xterm-256color'
 # vim-like comand line
 set -o vi
 
+# vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # auto-change tabname in screen
 export PROMPT_COMMAND='echo -ne "\033k\033\0134"'
 EOF
@@ -72,6 +76,7 @@ EOF
 echo "=== Git config"
 git config --global user.name $(whoami)
 git config --global user.email $(whoami)@$(hostname)
+git config --global core.editor "vim"
 git config --global alias.ci commit
 git config --global alias.st status
 
