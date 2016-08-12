@@ -15,7 +15,7 @@ update-alternatives --set editor /usr/bin/vim.nox
 
 
 echo "=== Enable sudo autocomplete, vim-like comand line, screen tabs auto-naming"
-cat > ~/.bashrc << EOF
+cat >> ~/.bashrc << EOF
 
 # sudo autocomplete
 complete -cf sudo
@@ -35,7 +35,7 @@ export PROMPT_COMMAND='echo -ne "\033k\033\0134"'
 EOF
 
 echo "=== Bash aliases"
-cat > ~/.bash_aliases << EOF
+cat >> ~/.bash_aliases << EOF
 alias nginx-restart='sudo nginx -t && sudo /etc/init.d/nginx restart'
 alias upgrade="sudo aptitude update; sudo aptitude upgrade"
 alias chmod-standard="find ./ -type d | xargs chmod -v 755 ; find ./ -type f | xargs chmod -v 644"
@@ -43,7 +43,7 @@ alias rm-pyc-files="find . -name '*.pyc' -exec rm '{}' ';'"
 EOF
 
 echo "=== Screen"
-cat > ~/.screenrc << EOF
+cat >> ~/.screenrc << EOF
 startup_message off
 defutf8 on
 vbell on
@@ -82,7 +82,7 @@ git config --global alias.st status
 
 echo "=== Pyenv"
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
-cat > ~/.bashrc << EOF
+cat >> ~/.bashrc << EOF
 
 # pyenv
 export PYENV_ROOT="${HOME}/.pyenv"
