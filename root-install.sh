@@ -60,6 +60,7 @@ aptitude install -y libevent-dev
 aptitude install -y cron htop screen mc sudo apache2-utils gcc rsync mosh
 aptitude install -y nginx supervisor
 
+sudo aptitude install -y curl make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev
 aptitude install -y python python-setuptools python-dev
 easy_install pip
 pip install virtualenv fabric mercurial
