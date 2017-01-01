@@ -45,8 +45,10 @@ git clone https://github.com/imbolc/.vim
 ln -s ~/.vim/.vimrc ~
 ln -s ~/.vim ~/.config/nvim
 
+
 aptitude install -y neovim
 update-alternatives --set editor /usr/bin/nvim
+nvim +PlugInstall +qall
 
 
 echo "=== INSTALL PACKAGES"

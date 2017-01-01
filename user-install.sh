@@ -12,6 +12,7 @@ ln -s ~/.vim/.vimrc ~
 ln -s ~/.vim ~/.config/nvim
 
 update-alternatives --set editor /usr/bin/nvim
+nvim +PlugInstall +qall
 
 
 echo "=== Enable sudo autocomplete, vim-like comand line, screen tabs auto-naming"
