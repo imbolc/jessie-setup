@@ -41,7 +41,7 @@ aptitude install -y git-core
 
 echo "=== VIM"
 rm -R ~/.vim ~/.vimrc
-git clone https://github.com/imbolc/.vim
+git clone https://github.com/imbolc/.vim ~/.vim
 ln -s ~/.vim/.vimrc ~
 ln -s ~/.vim ~/.config/nvim
 

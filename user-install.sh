@@ -7,7 +7,7 @@ cd; mkdir .ssh; chmod 700 .ssh; cd .ssh; touch authorized_keys; chmod 600 author
 
 echo "=== VIM"
 rm -R ~/.vim ~/.vimrc
-git clone https://github.com/imbolc/.vim
+git clone https://github.com/imbolc/.vim ~/.vim
 ln -s ~/.vim/.vimrc ~
 ln -s ~/.vim ~/.config/nvim
 
