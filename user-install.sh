@@ -82,7 +82,7 @@ git config --global alias.st status
 
 echo "=== Pyenv"
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
-cat >> ~/.bashrc << EOF
+cat >> ~/.bashrc << 'EOF'
 
 # pyenv
 export PYENV_ROOT="${HOME}/.pyenv"
