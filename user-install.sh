@@ -6,12 +6,12 @@ cd; mkdir .ssh; chmod 700 .ssh; cd .ssh; touch authorized_keys; chmod 600 author
 
 
 echo "=== VIM"
-
-cd; rm -R ~/.vim ~/.vimrc
+rm -R ~/.vim ~/.vimrc
 git clone https://github.com/imbolc/.vim
 ln -s ~/.vim/.vimrc ~
+ln -s ~/.vim ~/.config/nvim
 
-update-alternatives --set editor /usr/bin/vim.nox
+update-alternatives --set editor /usr/bin/nvim
 
 
 echo "=== Enable sudo autocomplete, vim-like comand line, screen tabs auto-naming"
@@ -40,6 +40,7 @@ alias nginx-restart='sudo nginx -t && sudo /etc/init.d/nginx restart'
 alias upgrade="sudo aptitude update; sudo aptitude upgrade"
 alias chmod-standard="find ./ -type d | xargs chmod -v 755 ; find ./ -type f | xargs chmod -v 644"
 alias rm-pyc-files="find . -name '*.pyc' -exec rm '{}' ';'"
+alias vim=nvim
 EOF
 
 echo "=== Screen"
