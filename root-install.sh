@@ -21,7 +21,7 @@ deb-src http://cdn.debian.net/debian/ jessie-backports main contrib non-free
 deb http://ppa.launchpad.net/neovim-ppa/unstable/ubuntu trusty main
 EOF
 
-echo "aptitude update"
+apt-key adv --keyserver subkeys.pgp.net --recv 55F96FCF8231B6DD
 aptitude update && aptitude upgrade
 aptitude purge apt-xapian-index -y
 
@@ -43,6 +43,7 @@ echo "=== VIM"
 rm -R ~/.vim ~/.vimrc
 git clone https://github.com/imbolc/.vim ~/.vim
 ln -s ~/.vim/.vimrc ~
+mkdir ~/.config
 ln -s ~/.vim ~/.config/nvim
 
 aptitude install -y neovim
