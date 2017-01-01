@@ -11,7 +11,8 @@ git clone https://github.com/imbolc/.vim ~/.vim
 ln -s ~/.vim/.vimrc ~
 ln -s ~/.vim ~/.config/nvim
 
-update-alternatives --set editor /usr/bin/nvim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
+sudo update-alternatives --config editor
 nvim +PlugInstall +qall
 
 
