@@ -35,7 +35,6 @@ Generate local keys:
 
     # disable password auth
     PasswordAuthentication no
-    PermitEmptyPasswords no
 
     # disable root login
     PermitRootLogin no
