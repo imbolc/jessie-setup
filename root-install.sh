@@ -21,7 +21,7 @@ deb-src http://cdn.debian.net/debian/ jessie-backports main contrib non-free
 deb http://ppa.launchpad.net/neovim-ppa/unstable/ubuntu trusty main
 EOF
 
-apt-key adv --keyserver subkeys.pgp.net --recv 55F96FCF8231B6DD
+apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 55F96FCF8231B6DD
 aptitude update && aptitude upgrade
 aptitude purge apt-xapian-index -y
 
