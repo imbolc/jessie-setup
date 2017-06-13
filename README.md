@@ -64,8 +64,8 @@ Run:
 
     wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
     sudo aptitude update
-    sudo aptitude install postgresql-9.5 postgresql-server-dev-9.5
-    sudo su postgres -c "cd /; createuser -s <username>"
+    sudo aptitude install postgresql-9.6 postgresql-server-dev-9.6
+    sudo su postgres -c "cd /; createuser -s user"
 
 
 Install mongodb
