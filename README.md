@@ -7,8 +7,8 @@ Run from root
 
 Create user
 -----------
-    # adduser <username>
-    
+    # adduser user
+
 Remove user sudo password. Add to **/etc/sudoers**
 
     user ALL=NOPASSWD: ALL
@@ -16,7 +16,7 @@ Remove user sudo password. Add to **/etc/sudoers**
 
 Run from user
 -------------
-    # su <user>
+    # su user
     $ cd && wget --no-check-certificate https://raw.github.com/imbolc/jessie-setup/master/user-install.sh && bash user-install.sh
 
 
@@ -24,8 +24,8 @@ Setup ssh pubkey auth
 ---------------------
 Copy pubkey from local mashine:
 
-    local@mashine$ ssh-copy-id <user@sever_ip>
-    
+    local@mashine$ ssh-copy-id user@sever_ip
+
 Generate local keys:
 
     ssh-keygen -t rsa
@@ -41,7 +41,7 @@ Generate local keys:
     PermitRootLogin no
 
     # ssh access allowed user list
-    AllowUsers <user>
+    AllowUsers user
 
 Restart ssh daemon: 
 
